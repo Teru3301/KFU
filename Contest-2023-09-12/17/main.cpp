@@ -1,42 +1,44 @@
 #include <iostream>
 
-int n;
-int* N;
-int water = 0;
-
-void func(int height)
-{
-	int tmp = -1;
-	for (int i = 0; i < n; i++)
-	{
-		if (N[i] >= height)
-		{
-			if (tmp != -1) water += tmp;
-			tmp = 0;
-		}
-		else if (tmp != -1) tmp++;
-	}
-}
-
 int main()
 {
-	int max = 0;
+	int n;
+	long long* arr;
+	long water = 0;
+	int max_i = 0;
 
 	std::cin >> n;
-	N = new int[n];
+	arr = new long long[n];
 	for (int i = 0; i < n; i++)
 	{
-		std::cin >> N[i];
-		if (N[i] > max) max = N[i];
+		std::cin >> arr[i];
+		if (arr[i] > arr[max_i]) max_i = i;
 	}
 
-	int height = 2;
-	while (height < max+1)
-	{
-		func(height);
-		height++;
-	}
-	std::cout << water;
+	long long localMax;
 	
+	localMax = arr[0];
+	for (int i = 1; i < max_i; i++)
+	{
+		if (arr[i] >= localMax)
+		{
+			localMax = arr[i];
+			continue;
+		}
+		water += localMax - arr[i];
+	}
+	localMax = arr[n-1];
+	for (int i = (n-2); i > max_i; i--)
+	{
+		if (arr[i] >= localMax)
+		{
+			localMax = arr[i];
+			continue;
+		}
+		water += localMax - arr[i];
+	}
+
+	std::cout << water;
+
 	return 0;
 }
