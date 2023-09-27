@@ -61,6 +61,7 @@ Complex div(Complex c1, Complex c2)
 void print(Complex num)
 {
     std::cout << num.re;
+    if (num.im == 0) num.im = 0;
     if (num.im >= 0) std::cout << '+';
     std::cout << num.im;
     std::cout << 'j' << std::endl;
