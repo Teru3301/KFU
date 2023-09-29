@@ -1,3 +1,22 @@
+#include <iostream>
+#include <algorithm>
+#include <iterator>
+#include <string>
+#include <vector>
+
+struct Course {
+    std::string name;
+    int semester;
+    bool finished;
+};
+
+struct Student {
+    std::string name;
+    std::string group;
+    std::vector<Course> courses;
+};
+
+// Ваш код будет вставлен сюда
 Student make_student(std::string line)
 {
     Student ns;
@@ -74,4 +93,30 @@ void print(std::vector<Student> students)
         if (students[i].group != students[i - 1].group) std::cout << students[i].group << std::endl;
         std::cout << "- " << students[i].name << std::endl;
     }
+}
+
+
+int main()
+{
+    int cur_semester, max_debt, stud_count;
+    std::cin >> stud_count >> cur_semester >> max_debt;
+    std::cin.ignore(1);  // Убираем из потока символ \n для корректной работы getline
+
+    std::vector<Student> students(stud_count);
+    for(auto& student: students) {
+        std::string line;
+        std::getline(std::cin, line);
+        student = make_student(line);
+    }
+    
+    std::vector<Student> expulsion_candidates;
+    std::copy_if(students.begin(),
+                 students.end(),
+                 std::back_inserter(expulsion_candidates),
+                 [cur_semester, max_debt](const Student& student){
+                     return is_debtor(student, cur_semester, max_debt);
+                 });
+
+    std::sort(expulsion_candidates.begin(), expulsion_candidates.end(), is_upper);
+    print(expulsion_candidates);
 }
