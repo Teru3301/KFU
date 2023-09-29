@@ -1,3 +1,11 @@
+#include <iostream>
+
+struct Complex{
+  double re;  // Действительная часть
+  double im;  // Мнимая часть
+};
+
+// Ваш код будет вставлен сюда
 Complex make_complex(std::string num)
 {
     while (num.find(' ') != 18446744073709551615) num.replace(num.find(' '), 1, "");
@@ -65,4 +73,20 @@ void print(Complex num)
     if (num.im >= 0) std::cout << '+';
     std::cout << num.im;
     std::cout << 'j' << std::endl;
+}
+
+
+int main()
+{
+    std::string num;
+    std::getline(std::cin, num, 'j');
+    Complex c1 = make_complex(num);
+    
+    std::getline(std::cin, num, 'j');
+    Complex c2 = make_complex(num);
+    
+    print(sum(c1, c2));
+    print(sub(c1, c2));
+    print(mul(c1, c2));
+    print(div(c1, c2));
 }
