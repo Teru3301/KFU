@@ -1,3 +1,11 @@
+package main
+import (
+    "bufio"
+    "fmt"
+    "os"
+)
+
+// Ваш код будет вставлен сюда
 import "strings"
 
 func isPalindrome(line string) bool {
@@ -19,4 +27,14 @@ func isPalindrome(line string) bool {
 	}
 
 	return true
+}
+
+
+func main() {
+    line, _  := bufio.NewReader(os.Stdin).ReadString('\n')
+    if isPalindrome( line[:len(line)-1] ){  // Обрезаем \n в конце строки
+        fmt.Println("YES")
+    }else{
+        fmt.Println("NO")
+    }
 }
