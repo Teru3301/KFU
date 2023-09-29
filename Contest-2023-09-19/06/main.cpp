@@ -1,3 +1,14 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+struct Student {
+    std::string name;
+    std::string group;
+};
+
+// Ваш код будет вставлен сюда
 Student make_student(std::string line)
 {
     Student ns; // new student
@@ -36,4 +47,24 @@ void print(std::vector<Student> students)
         if (students[i].group != students[i - 1].group) std::cout << students[i].group << std::endl;
         std::cout << "- " << students[i].name << std::endl;
     }
+}
+
+
+
+int main()
+{
+    int count;
+    std::cin >> count;
+    std::cin.ignore(1);  // Убираем из потока символ \n для корректной работы getline
+    
+    std::vector<Student> students(count);
+    for(auto& student: students) {
+        std::string line;
+        std::getline(std::cin, line);
+        student = make_student(line);
+    }
+    
+    std::sort(students.begin(), students.end(), is_upper);
+    
+    print(students);
 }
