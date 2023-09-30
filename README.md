@@ -22,6 +22,6 @@
 | [15. RLE сжатие](https://contest.yandex.ru/contest/52142/problems/15/) | [main.cpp]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="40"/>]() |
 | [16. Сглаживание графика Погоды](https://contest.yandex.ru/contest/52142/problems/16/) | [main.go]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/go.jpg" width="40"/>]() |
 | [17. Дождь над островом](https://contest.yandex.ru/contest/52142/problems/17/) | [main.cpp]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="40"/>]() |
-| [18. Заголовок столбца Excel](https://contest.yandex.ru/contest/52142/problems/18/) | [main.go]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/go.jpg" width="40"/>]() |
+| [18. Заголовок столбца Excel](https://contest.yandex.ru/contest/52142/problems/18/) | [main.cpp]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="40"/>]() |
 | [19. Подходящие Слова](https://contest.yandex.ru/contest/52142/problems/19/) | [main.cpp]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="40"/>]() |
-| [20. Анаграмма. 2 числа](https://contest.yandex.ru/contest/52142/problems/20/) | [main.go]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/go.jpg" width="40"/>]() |
+| [20. Анаграмма. 2 числа](https://contest.yandex.ru/contest/52142/problems/20/) | [main.cpp]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="40"/>]() |
