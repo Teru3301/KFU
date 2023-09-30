@@ -3,11 +3,11 @@
 
 [Контест 1](https://contest.yandex.ru/contest/52142/problems/)
 
-  - задание 1
+  - [задание 1]()
     - main.cpp
-  - задание 2
+  - [задание 2]()
     - main.cpp 
-  - задание 3
+  - [задание 3]()
     - main.cpp 
 
 [Контест 2](https://contest.yandex.ru/contest/52676/problems/)
