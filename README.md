@@ -4,7 +4,9 @@
 |
 + 1 задание  
 |
-+ 2 задание  
++ 2 задание
+|
+\ 3 задание 
 
 - Контест 2 https://contest.yandex.ru/contest/52676/problems/
 
