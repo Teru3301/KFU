@@ -8,6 +8,9 @@
 |main.cpp|[<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="50"/>](image.png)|
   
 
-[Контест 2](https://contest.yandex.ru/contest/52676/problems/)
-
-
+|[Контест 2](https://contest.yandex.ru/contest/52676/problems/) |  |
+| --- | :-: |
+| [1. Функция. Простое число](./contest_02/01/main.cpp) | ![](./img/go.png) |
+| [2. Функция. Выход из лабиринта](./contest_02/02/main.go) |  ![](./img/go.png) |
+| [3. Функция. Сортировка по количеству единиц](./contest_02/03/main.cpp) | ![](./img/go.png) |
+| ... | ... |
