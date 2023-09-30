@@ -1,11 +1,24 @@
 # Румянцев Тимур Рустемович ПИ-б-о-231 (2)
 
-Контест 1 https://contest.yandex.ru/contest/52142/problems/  
-|
-+---1 задание  
-+---2 задание
-\---3 задание 
-
-- Контест 2 https://contest.yandex.ru/contest/52676/problems/
-
-
+RepoRoot
+│   ReadMe.md
+│
++---contest_01
+│   +---01
+│   │       main.cpp
+│   +---02
+│   │       main.go
+│   \---03
+│           main.cpp
+│
++---contest_02
+│   +---01
+│   │       main.go
+│   +---02
+│   │       main.go
+│   \---03
+│           main.go
+│
+\---img
+        cpp.png
+        go.png
