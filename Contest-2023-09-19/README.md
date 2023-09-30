@@ -1,5 +1,5 @@
 # [__```Вернуться к корневому README```__](https://github.com/Teru3301/KFU/blob/main/README.md)  
-### Контест 2 https://contest.yandex.ru/contest/52676/problems/
+# Контест 2 https://contest.yandex.ru/contest/52676/problems/
 
 | Задание | Решение | Язык |
 | --- | --- | --- |
