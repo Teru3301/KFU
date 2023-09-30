@@ -5,4 +5,4 @@
 
 ### README файлы:
 - [1 Контест](https://github.com/Teru3301/KFU/blob/main/Contest-2023-09-12/README.md)
-- [2 Контест]()
+- [2 Контест](https://github.com/Teru3301/KFU/blob/main/Contest-2023-09-19/README.md)
