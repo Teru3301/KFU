@@ -1,4 +1,4 @@
-# [__```Вернуться к корневону README```__](https://github.com/Teru3301/KFU/blob/main/README.md)  
+# [__```Вернуться к корневому README```__](https://github.com/Teru3301/KFU/blob/main/README.md)  
 ### Контест 1 https://contest.yandex.ru/contest/52142/problems/  
 
 | Задание | Решение | Язык |
