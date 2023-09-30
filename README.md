@@ -5,10 +5,10 @@
   - [1. Приближенное значение Пи](https://contest.yandex.ru/contest/52142/problems/1/)
 
 
-| Язык | файл |
-| --- | --- |
-| main.cpp | sdjgvejf |
-| ... | ... |
+| Задание | Решение | Язык |
+| --- | --- | --- |
+| main.cpp | sdjgvejf | --- |
+| ... | ... | ... |
   
 
 |[Контест 2](https://contest.yandex.ru/contest/52676/problems/) |  |
