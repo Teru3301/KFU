@@ -1,5 +1,5 @@
 ### Контест 2 https://contest.yandex.ru/contest/52676/problems/
-```Ветнуться к корневону [README](https://github.com/Teru3301/KFU/blob/main/README.md)```
+```Ветнуться к корневону``` [README](https://github.com/Teru3301/KFU/blob/main/README.md)
 
 | Задание | Решение | Язык |
 | --- | --- | --- |
