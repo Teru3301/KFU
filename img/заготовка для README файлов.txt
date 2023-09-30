@@ -1,5 +1,5 @@
+# [__```Вернуться к корневону README```__](https://github.com/Teru3301/KFU/blob/main/README.md)  
 ### Контест 
-Ветнуться к корневону [README](https://github.com/Teru3301/KFU/blob/main/README.md)
 
 | Задание | Решение | Язык |
 | --- | --- | --- |
