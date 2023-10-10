@@ -4,4 +4,4 @@
 
 | Задание | Решение | Язык |
 | --- | --- | --- |
-| [1. Объединить отсортированные последовательности](https://contest.yandex.ru/contest/53504/problems/1/) | [main.cpp]() | [<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="40"/>]() |
+| [1. Объединить отсортированные последовательности](https://contest.yandex.ru/contest/53504/problems/1/) | [main.cpp](https://github.com/Teru3301/KFU/blob/main/Contest-2023-10-03/01/main.cpp) | [<img src="https://github.com/Teru3301/KFU/blob/main/img/cpp.png" width="40"/>]() |
