@@ -10,4 +10,4 @@
 - [Практика №3](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2023-10-03/README.md)
 
 ### Контесты 2024
-- [Практика №1](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-09-11) 
+- [Практика №1](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-09-11/README.md) 
