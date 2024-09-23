@@ -1,6 +1,6 @@
 # [__```Вернуться к корневому README```__](https://github.com/Teru3301/KFU/blob/main/README.md)  
 # Контест 1  
-тут должна быть ссылка </br>
+https://contest.yandex.ru/contest/67794/standings/
 
 | Задание | Решение | Язык |
 | --- | --- | --- |
