@@ -1,9 +1,21 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 int main()
 {
-	std::cout << sqrt(12) * (1 - (1.0f / (3 * 3)) + (1.0f / (5 * pow(3, 2))) - (1.0f / (7 * pow(3, 3))) + (1.0f / (9 * pow(3, 4))) - (1.0f / (11 * pow(3, 5))));
+	double pi = std::sqrt(12);
+	double tmp = 1.0;
+	double n = 3.0;
+	for (int i = 1; i <= 5; i++)
+	{
+		double tmp2 = 1.0 / (n * std::pow(3.0, i));
+		i % 2 ? tmp -= tmp2 : tmp += tmp2;
+		n += 2;
+	}
+	pi *= tmp;
+
+	std::cout << std::setprecision(16) << pi;
 
 	return 0;
 }
