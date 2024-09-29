@@ -1,91 +1,69 @@
 #include <iostream>
-#include <stack>
 #include <string>
+#include <algorithm>
 
-// Функция возвращает оператор
-bool isOperator(char c) 
+int prio (int symb)
 {
-    return c == '+' || c == '-' || c == '*' || c == '/' || c == '%' || c == '^';
-}
+	if (symb == '+' || symb == '-') return 1;
+	if (symb == '*' || symb == '/' || symb == '%') return 2;
+	if (symb == '^') return 3;
+	return -1;	//	я сам не знаю почему, но без этого, ничего не работает
+}	//	Мб Чабанов какой-то лишний символ добавил, вот оно и не работает
 
-// Функция определяет приоритет оператора
-int getPriority(char operation) 
+int main ()
 {
-    if (operation == '+' || operation == '-')
-    {
-        return 1;
-    }
-    else if (operation == '*' || operation == '/' || operation == '%')
-    {
-        return 2;
-    }
-    else if (operation == '^')
-    {
-        return 3;
-    }
-    return 0;
-}
+	std::string str;
+	std::string sign_bufer = "";
+	std::string result = "";
+	bool need_space = false;
 
-// Функция преобразует выражение в обратную польскую нотацию
-std::string infixToPostfix(const std::string& infix) 
-{
-    std::string postfix;
-    std::stack<char> operators;
+	std::cin >> str;
 
-    for (char c : infix) 
-    {
-        if (std::isdigit(c))
-        {
-            postfix += c;
-        }
-        else if (c == '(') 
-        {
-            operators.push(c);
-        }
-        else if (c == ')') 
-        {
-            while (!operators.empty() && operators.top() != '(') 
-            {
-                postfix += " ";
-                postfix += operators.top();
-                operators.pop();
-            }
+	for (auto symbol : str)
+	{
+		if (symbol == '(')////////////////////////////////////////////////////
+		{											//	обработка скобок	//
+			sign_bufer += symbol;					//////////////////////////
+			continue;														//
+		}																	//
+		if (symbol == ')')													//
+		{																	//
+			while (sign_bufer[sign_bufer.size()-1] != '(')					//
+			{																//
+				result = result + ' ' + sign_bufer[sign_bufer.size()-1];	//
+				sign_bufer.pop_back();										//
+			}																//
+			sign_bufer.pop_back();											//
+			continue;														//
+		}/////////////////////////////////////////////////////////////////////
+		if (std::isdigit(symbol))/////////////////////////
+		{							//	обработка чисел	//
+			if (need_space)			//////////////////////
+			{											//
+				result += ' ';							//
+				need_space = false;						//
+			}											//
+			result += symbol;							//
+			continue;									//
+		}												//
+		need_space = true;////////////////////////////////
+		if (sign_bufer.size())////////////////////////////////////////////////////////////////
+		{																					//
+			while (symbol != '^' && prio(sign_bufer[sign_bufer.size()-1]) >= prio(symbol))	//
+			{																				//
+				result = result + ' ' + sign_bufer[sign_bufer.size()-1];					//
+				sign_bufer.pop_back();														//
+				if (!sign_bufer.size()) break;												//
+			}																				//
+			sign_bufer += symbol;						//////////////////////////////////////
+		}												//	обработка арифметических знаков	//
+		else sign_bufer += symbol;////////////////////////////////////////////////////////////
+	}
 
-            operators.pop(); // remove '('
-        }
-        else if (isOperator(c)) 
-        {
-            // Условие должно учитывать, что все одинаковые операторы, кроме оператора возведения в степень,
-            // могут идти между числами.
-            while (!operators.empty() && (getPriority(operators.top()) > getPriority(c) 
-                || (getPriority(operators.top()) == getPriority(c) && c != '^')))
-            {
-                postfix += " ";
-                postfix += operators.top();
-                operators.pop();
-            }
+	std::reverse(sign_bufer.begin(), sign_bufer.end());			//	дозапись значений	
+	for (auto sign : sign_bufer) result = result + ' ' + sign;	//	из буффера
 
-            postfix += " ";
-            operators.push(c);
-        }
-    }
-
-    while (!operators.empty()) 
-    {
-        postfix += " ";
-        postfix += operators.top();
-        operators.pop();
-    }
-
-    return postfix;
-}
-
-int main() 
-{
-    std::string infixExpression;
-    std::getline(std::cin, infixExpression);
-
-    std::string postfixExpression = infixToPostfix(infixExpression);
-
-    std::cout << postfixExpression << std::endl;
+	std::cout << result;
+	
+	return 0;
 }

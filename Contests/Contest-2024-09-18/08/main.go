@@ -4,7 +4,28 @@ import "fmt"
 const rows int = 9
 const cols int = 9
 
-// Ваш код будет вставлен сюда
+func isValidSudoku(bord[rows][cols] int) bool {
+	for y := 0; y < rows; y++ {
+		var sum int = 0
+		for x := 0; x < cols; x++ {
+			sum += bord[y][x]
+		}
+		if sum != 45 {
+			return false
+		}
+	}
+	for x := 0; x < cols; x++ {
+		var sum int = 0
+		for y := 0; y < rows; y++ {
+			sum += bord[y][x]
+		}
+		if sum != 45 {
+			return false
+		}
+	}
+
+	return true
+}
 
 func main() {
     var bord [rows][cols]int

@@ -18,7 +18,7 @@ int main()
 	}
 
 	for (const auto& [key, value] : word)
-		if (value == max) std::cout << key << ' ';
+		if (value == max) std::cout << key << " ";
 
 	return 0;
 }

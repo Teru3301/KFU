@@ -1,32 +1,41 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
-func main() {
+func main () {
 	var n int
 	var x int64
+
 	fmt.Scan(&n, &x)
 
-	nums := make(map[int64]bool, n)
+	var arr = make([]int64, n)
 	for i := 0; i < n; i++ {
-		var tmp int64
-		fmt.Scan(&tmp)
-		if tmp <= x {
-			nums[tmp] = true
+		fmt.Scan(&arr[i])
+	}
+
+	sort.SliceStable(arr, func(i, j int) bool {
+    	return arr[i] < arr[j]
+	})
+
+	var a int64
+	var b int64
+
+	tmp := x / 2 + 1
+	for i := 0; i < n; i++ {
+		if arr[i] <= tmp {
+			for j := i+1; j < n; j++ {
+				if arr[i] + arr[j] == x {
+					a = arr[i]
+					b = arr[j]
+				}
+			}
+		} else {
+			break
 		}
 	}
 
-	var prin = true
-	for key := range nums {
-		if nums[x-key] {
-			if x-key != key {
-				fmt.Print(min(x-key, key), max(x-key, key))
-				prin = false
-				break
-			}
-		}
-	}
-	if prin {
-		fmt.Print(0, 0)
-	}
+	fmt.Print(a, b)
 }
