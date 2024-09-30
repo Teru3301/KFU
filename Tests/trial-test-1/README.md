@@ -591,7 +591,7 @@ else; std::cout << b;
 > Правильный ответ: Ошибка компиляции
 
 Дан фрагмент кода на C++. Какие из следующих циклов являются бесконечными?
-> Правильный ответ: `for(unsigned short i=1; i != 0; i++) cout << i;` `for(unsigned short i=1; ; i++) cout << i;` `for(unsigned short i=1; i <100; ) { if (i == 99) continue; cout << i; i++;}` `for(unsigned short i=1; i++; ) { cout << i; }` 
+> Правильный ответ: `for(unsigned short i=1; i != 0; i++) cout << i;` `for(unsigned short i=1; ; i++) cout << i;` `for(unsigned short i=1; i <100; ) { if (i == 99) continue; cout << i; i++;}` `for(unsigned short i=1; i++; ) { cout << i; }` `for(unsigned short i=1; i <100; ) { if (i == 99) continue; cout << i; i++; }`
 
 Дан фрагмент кода на Go. Какие из следующих циклов являются бесконечными?
 > Правильный ответ: `for i := uint8(1); i < 100; { if i == 99 { continue } fmt.Print(i) i += 1 }` `for i := uint8(1); ; i++ { fmt.Print(i) }` `for ; ; { fmt.Print(1) }` `for i := uint8(1); i<100;  { fmt.Print(i) }` 
@@ -634,23 +634,44 @@ do{
 ```
 > Правильный ответ: y любое число <= 5
 
-
+Дан фрагмент кода на языке Go. Что будет выведено в результате его работы?
 ```
-
+str := "hello, world"
+for i := range str{
+    fmt.Print(i)
+}
 ```
-> Правильный ответ: 
+> Правильный ответ: 01234567891011
 
-
+Дан фрагмент кода на Go. Что будет выведено на экран в результате выполнения данного фрагмента?
 ```
-
+a := 5
+b := 10
+switch (a + b){
+    case  5: 
+        fmt.Print("0")
+        fallthrough
+    case 10: 
+        fmt.Print("1")
+        fallthrough
+    case 15: 
+        fmt.Print("2")
+        fallthrough
+    default: 
+        fmt.Print("3")
+}
 ```
-> Правильный ответ: 
+> Правильный ответ: 23
 
-
+Дан фрагмент кода на C++. Что будет напечатано в результате выполнения следующего фрагмента кода?
 ```
-
+do{
+    int i = 0;
+    i++;
+    cout << i;
+}while(i<1);
 ```
-> Правильный ответ: 
+> Правильный ответ: Ошибка компиляции
 
 
 ```
