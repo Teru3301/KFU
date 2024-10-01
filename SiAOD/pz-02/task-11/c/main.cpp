@@ -11,7 +11,7 @@ int main ()
 	std::cout << "y: "; std::cin >> y;
 
 	if (x >= 0.0)
-		if (std::pow(x, 2.0) + std::pow(y, 2.0) > 1.0) in_area = true;
+		if (std::pow(x, 2.0) + std::pow(y, 2.0) <= 1.0) in_area = true;
 	if (x <= 0.0)
 		if (x >= -1.0 && y <= 0.0 && y >= -1) in_area = true; 
 
