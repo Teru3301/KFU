@@ -229,7 +229,7 @@ for (i = 5; i<11; i++)
   cout << i;
 cout << i;
 ```
-> Правильный ответ: 567891011
+> Правильный ответ: 56789100
 
 Дан фрагмент кода на С++. Что будет выведено на экран в результате выполнения данного фрагмента?
 ```
@@ -589,9 +589,6 @@ if (a < b); std::cout << a;
 else; std::cout << b;
 ```
 > Правильный ответ: Ошибка компиляции
-
-Дан фрагмент кода на C++. Какие из следующих циклов являются бесконечными?
-> Правильный ответ: `for(unsigned short i=1; i != 0; i++) cout << i;` `for(unsigned short i=1; ; i++) cout << i;` `for(unsigned short i=1; i <100; ) { if (i == 99) continue; cout << i; i++;}` `for(unsigned short i=1; i++; ) { cout << i; }` `for(unsigned short i=1; i <100; ) { if (i == 99) continue; cout << i; i++; }`
 
 Дан фрагмент кода на Go. Какие из следующих циклов являются бесконечными?
 > Правильный ответ: `for i := uint8(1); i < 100; { if i == 99 { continue } fmt.Print(i) i += 1 }` `for i := uint8(1); ; i++ { fmt.Print(i) }` `for ; ; { fmt.Print(1) }` `for i := uint8(1); i<100;  { fmt.Print(i) }` `for i := uint8(1); i<100;  { fmt.Print(i) }` 
