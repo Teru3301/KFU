@@ -14,11 +14,12 @@
 - [Практика №1](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-09-11/README.md) 
 - [Практика №2](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-09-18/README.md) 
 - [Практика №3](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-09-25/README.md)
+- [Практика №4](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-10-02/README.md)
 
 ### СиАОД
 - [Практика №1](https://github.com/Teru3301/KFU/blob/main/SiAOD/pz-01/README.md) 
 - [Практика №2](https://github.com/Teru3301/KFU/blob/main/SiAOD/pz-02/README.md) 
-
+- [Практика №3](https://github.com/Teru3301/KFU/blob/main/SiAOD/pz-03/README.md)
 
 
 

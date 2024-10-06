@@ -1,0 +1,23 @@
+[
+   {
+      "project_id": 1,
+      "tasks": [
+         {
+            "user_id": 1,
+            "id": 1,
+            "title": "delectus aut autem",
+            "completed": false
+         },
+         {
+            "user_id": 5,
+            "id": 2,
+            "title": "quis ut nam facilis et officia qui",
+            "completed": true
+         }
+      ]
+   },
+   {
+      "project_id": 2,
+      "tasks": []
+   }
+]
