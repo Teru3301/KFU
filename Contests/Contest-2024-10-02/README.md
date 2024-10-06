@@ -2,7 +2,7 @@
 # Контест 4  
 https://contest.yandex.ru/contest/69023/problems/
 
-[Полезные источники](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-10-02/userful-sources.md)
+[Полезные источники](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-10-02/useful-sources.md)
 
 | Задание | Решение | Язык |
 | --- | --- | --- |
