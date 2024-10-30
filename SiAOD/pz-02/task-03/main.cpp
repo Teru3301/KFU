@@ -20,7 +20,7 @@ int main ()
 	double leg1 = std::abs(std::max(a.x, b.x) - std::min(a.x, b.x));
 	double leg2 = std::abs(std::max(a.y, b.y) - std::min(a.y, b.y));
 
-	std::cout << "Расстояние: " << std::sqrt(std::pow(leg1, 2.0) + std::pow(leg2, 2.0)); 
+	std::cout << "Расстояние: " << std::sqrt(std::pow(leg1, 2.0) + std::pow(leg2, 2.0)) << '\n'; 
 
 	return 0;
 }

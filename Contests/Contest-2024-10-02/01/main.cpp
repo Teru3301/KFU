@@ -1,10 +1,11 @@
 #include <iostream>
+#include <string>
+#include <sstream>
 
 struct Complex{
   double re;  // Действительная часть
   double im;  // Мнимая часть
 };
-
 
 Complex make_complex(std::string num)
 {
