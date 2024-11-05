@@ -1,3 +1,5 @@
+#pragma once
+
 class Employee {
 protected:
     std::string name, position;

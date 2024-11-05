@@ -1,4 +1,7 @@
+#pragma once
+
 #include <queue>
+
 class OSUpdater : public IRunnable {
 public:
     void run() {
