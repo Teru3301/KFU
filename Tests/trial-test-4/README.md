@@ -63,9 +63,9 @@ int main()
 ```
 
 Ответ:
-- [ ] T
-- [x] vector<T>
-- [ ] vector<vector<T>>
+- [ ] ```T```
+- [x] ```vector<T>```
+- [ ] ```vector<vector<T>>```
 - [ ] Ошибка компиляции
 
 ---
@@ -80,7 +80,7 @@ class SomeClass{
 
 Ответ:
 - [ ] public
-- [ ] private
+- [x] private
 - [ ] protected
 - [ ] published
 
@@ -101,49 +101,12 @@ class SomeClass{
 Выберите все перегрузки функции void print(double a);
 
 Ответ:
-<ul>
-<li>- [ ] <li>
-  
-```cpp
-void print(double b);
-```
-</li></li>
-
-<li>- [ ] <li>
-
-```cpp
-void print_d(double a);
-```
-</li></li>
-
-<li>- [ ] <li>
-
-```cpp
-double print(double a);
-```
-</li></li>
-
-<li>- [x] <li>
-
-```cpp
-void print(float a);
-```
-</li></li>
-
-<li>- [x] <li>
-
-```cpp
-void print(double a, int b);
-```
-</li></li>
-
-<li>- [x] <li>
-
-```cpp
-void print(std::vector<double> a);
-```
-</li></li>
-</ul>
+- [ ] ```void print(double b);```
+- [ ] ```void print_d(double a);```
+- [ ] ```double print(double a);```
+- [x] ```void print(float a);```
+- [x] ```void print(double a, int b);```
+- [x] ```void print(std::vector<double> a);```
 
 ---
 
@@ -419,46 +382,253 @@ int main()
 ---
 
 
+Код на С++. Требуется запретить доступ к деструктору класса Point из внешнего кода, как это можно сделать?
+
+Ответ:
+- [ ] ~Point();
+- [x] private ~Point();
+- [ ] private: ~Point();
+- [ ] explicit ~Point();
+- [ ] __~Point__();
+- [ ] Никак
+
+---
 
 
+Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+template<typename T>
+T sum(T a, T b){
+    auto res = a + b;
+    return res;
+}
+
+int main()
+{
+    std::cout << sum(3.0, 0.1415);
+}
+```
+
+Ответ:
+- [x] 3.1415
+- [ ] 0.1415
+- [ ] 3
+- [ ] 0.1415
+
+---
 
 
+Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+void print(int a){
+    std::cout << a;
+}
+
+void print(double& a){
+    std::cout << 99;
+}
+
+int main()
+{
+    double i = 0.5;
+    print(i);
+}
+```
+
+Ответ:
+- [ ] 0
+- [ ] 0.5
+- [x] 99
+- [ ] Ошибка компиляции
+
+---
 
 
+Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+void print(short a){
+    std::cout << a;
+}
+
+void print(int a){
+    std::cout << 2*a;
+}
+
+void print(double a){
+    std::cout << 3*a;
+}
+
+int main()
+{
+    unsigned int i = 10;
+    print(i);
+}
+```
+
+Ответ:
+- [ ] 10
+- [ ] 20
+- [ ] 30
+- [ ] Ничего
+- [x] Ошибка компиляции
+
+---
 
 
+Язык С++. Что из перечисленного может быть использовано в качестве объявления деструктора для класса SomeClass?
+
+Ответ:
+- [x] ~SomeClass(){}
+- [x] ~SomeClass() = default;
+- [ ] ~SomeClass(int a) = default;
+- [ ] default ~SomeClass(){}
+- [ ] ~SomeClass(int a){}
+- [ ] ~SomeClass(int a=0, int b=0){}
+
+---
 
 
+Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+void print(const int  a){
+    std::cout << -a;
+}
+
+void print(int a){
+    std::cout << a;
+}
+
+int main()
+{
+    int i = 10;
+    print(i);
+}
+```
+
+Ответ:
+- [ ] -10
+- [ ] 10
+- [ ] Ничего
+- [x] Ошибка компиляции
+
+---
 
 
+Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+template<typename T>
+T sum(T a, T b){
+    int res = a + b;
+    return res;
+}
+
+int main()
+{
+    std::cout << sum(3.0, 0.1415);
+}
+```
+
+Ответ:
+- [x] 3
+- [ ] 3.1415
+- [ ] 0.1415
+- [ ] Ошибка компиляции
+
+---
 
 
+Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+template<typename T>
+void print(T a){
+    std::cout << a;
+}
+
+void print(int a){
+    std::cout << a;
+}
+
+void print(float a){
+    std::cout << 99;
+}
+
+int main()
+{
+    double i = 0.5;
+    print(i);
+}
+```
+
+Ответ:
+- [ ] 0
+- [x] 0.5
+- [ ] 99
+- [ ] Ошибка компиляции
+
+---
 
 
+Дана функция на языке С++. Выберите всё варианты, которые являются допустимым объявлением этой функции:
+```cpp
+void print(int x, int y=10){
+    std::cout << "x: " << x << '\n';
+    std::cout << "y: " << y << '\n';
+}
+```
+
+Ответ:
+- [x] ```void print(int x, int y);```
+- [x] ```void print(int, int);```
+- [ ] ```void print(int x=10, int y=10);```
+- [ ] ```void print(int x, int y=5);```
+- [ ] ```void print(int x, int y=10);```
+- [ ] ```void print(int x=10, int y);```
+- [ ] ```void print(int, int=10);```
+
+---
 
 
+Дан фрагмент кода на С++. Что отобразится на экране после его выполнения?
+```cpp
+class Point{
+    ~Point(){}
+};
+ 
+int main(){
+    Point p;
+    std::cout << sizeof(p);
+}
+```
+
+Ответ:
+- [ ] 0
+- [ ] 1
+- [ ] 2
+- [ ] 4
+- [ ] 8
+- [x] Ошибка. Не доступен деструктор
+
+---
 
 
+Дан фрагмент кода на С++. Как инстанцировать данный шаблон?
+```cpp
+template<typename T>
+T foo(T a, T b){
+    auto res = a + b;
+    return res;
+}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Ответ:
+- [x] ```foo(3, 0.1415);```
+- [x] ```foo(3.0, 0.1415);```
+- [x] ```foo(3.0, 0);```
+- [x] ```foo(3, 0);```
+- [ ] ```foo<double>(3, 0.1415);```
+- [ ] ```foo<double, double>(3.0, 0.1415);```
+- [ ] ```foo<int>(3.0, 0.1415);```
+- [ ] ```foo<double, double, double>(3.0, 0.1415);```
 
 
 
