@@ -386,8 +386,8 @@ int main()
 
 Ответ:
 - [ ] ~Point();
-- [x] private ~Point();
-- [ ] private: ~Point();
+- [ ] private ~Point();
+- [x] private: ~Point();
 - [ ] explicit ~Point();
 - [ ] __~Point__();
 - [ ] Никак
