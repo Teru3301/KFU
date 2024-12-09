@@ -7,45 +7,57 @@ int main ()
 	double *arr;
 
 	std::cin >> n;
+	arr = new double[n];
 	for (int i = 0; i < n; i++)
 		std::cin >> arr[i];
 
-	double tmp;
-	bool done;
-	while (true)
+	int l_border = 0;
+	int r_border = n - 1;
+	bool changed = true;
+	int tmp;
+
+	while (changed)
 	{
-		done = true;
-		for (int i = 1; i < n; i++)
+		changed = false;
+		int bord;
+		//	проход с лева на право
+		for (int i = l_border; i < r_border; i++)
 		{
-			if (arr[i - 1] < arr[i])
+			if (arr[i] > arr[i+1])
 			{
 				tmp = arr[i];
-				arr[i] = arr[i - 1];
-				arr[i - 1] = tmp;
-				done = false;
+				arr[i] = arr[i+1];
+				arr[i+1] = tmp;
+		
+				std::cout << ">>> ";
+				print_arr(arr, n, i, i+1, l_border, r_border);
+				changed = true;
+				bord = i;
 			}
-			print_arr(arr, n);
 		}
-		if (done) break;
-		done = true;
-		for (int i = n - 1; i > 1; i--)
+		r_border = bord;
+
+		//	проход с права на лево
+		for (int i = r_border; i > l_border; i--)
 		{
-			if (arr[i] < arr[i - 1])
+			if (arr[i] < arr[i-1])
 			{
 				tmp = arr[i];
-				arr[i] = arr[i - 1];
-				arr[i - 1] = tmp;
-				done = false;
+				arr[i] = arr[i-1];
+				arr[i-1] = tmp;
+			
+				std::cout << "<<< ";
+				print_arr(arr, n, i, i-1, l_border, r_border);
+				changed = true;
+				bord = i;
 			}
-			print_arr(arr, n);
 		}
-		if (done) break;
+		l_border = bord;
 	}
 
 
-	print_arr(arr, n);
-
-
+	std::cout << '\n';
+	print_arr(arr, n, -1, -1, l_border, r_border - 1);
 
 	return 0;
 }
