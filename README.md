@@ -24,4 +24,10 @@
 - [Практика №2](https://github.com/Teru3301/KFU/blob/main/SiAOD/pz-02/README.md) 
 - [Практика №3](https://github.com/Teru3301/KFU/blob/main/SiAOD/pz-03/README.md)
 
+### Тесты по Алгоритмизации и программированию
+- [Тест №1](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-1/README.md)
+- [Тест №2](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-2/README.md)
+- [Тест №3](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-3/README.md)
+- [Тест №4](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-4/README.md)
+- [Тест №5](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-5/README.md)
 
