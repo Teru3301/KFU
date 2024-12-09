@@ -17,6 +17,7 @@
 - [Практика №4](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-10-02/README.md)
 - [Практика №5](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-10-09/README.md)
 - [Практика №6](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-10-16/README.md)
+- [Практика №7](https://github.com/Teru3301/KFU/blob/main/Contests/Contest-2024-10-23/README.md)
 
 ### СиАОД
 - [Практика №1](https://github.com/Teru3301/KFU/blob/main/SiAOD/pz-01/README.md) 
