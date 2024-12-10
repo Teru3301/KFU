@@ -1,37 +1,15 @@
-#include <iostream>
-#include <bitset>
-#include <iomanip>
+11000000010000000000000110000000
 
-union universal_memory
-{
-	long long znak;
-	unsigned long long bez_znak;
-	double veshestv;
-};
+без знака
+3225420160
 
-int main()
-{
-	std::bitset<32> bits;	//	переменная последовательности бит
+со знаком
+−1069547136
 
-	bits.reset();			//	обнуление последовательности
+вещественное
+1 10000000 10000000000000110000000
+1 - отрицательное
+10000000: 128 - 127 = 1
+10000000000000110000000 = 4194688
 
-	bits.set(0);			//	каждый set задаёт единицу в передаваемый индекс
-	bits.set(1);
-	bits.set(8);
-	bits.set(23);
-	bits.set(22);
-
-	for (int i = 0; i < 32; i++) std::cout << bits[i];	//	выводит на экран заданные биты
-	std::cout << '\n';
-
-	universal_memory number;
-	number.bez_znak = bits.to_ullong();					//	передача беззнакового long long
-
-	setlocale(LC_ALL, "ru");
-	std::cout << std::setprecision(64);
-	std::cout << "беззнаковое:\t" << number.bez_znak << '\n';
-	std::cout << "знаковое:\t" << number.znak << '\n';
-	std::cout << "вещественное:\t" << number.veshestv << '\n';
-
-	return 0;
-}
+-1 * 2^1 * 1.4194688 = 2.8389376
