@@ -30,4 +30,4 @@
 - [Тест №3](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-3/README.md)
 - [Тест №4](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-4/README.md)
 - [Тест №5](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-5/README.md)
-
+- [Тест №6](https://github.com/Teru3301/KFU/blob/main/Tests/trial-test-6/README.md)
