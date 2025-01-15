@@ -1642,12 +1642,12 @@ int main(){
 
 Дан фрагмент кода на С++:
 
-class MyClass{
+    struct MyClass{
     double i = 1.0;
 };
 
-double operator+ (MyClass a, double b){
-    return a.i + b;
+double operator+ (double a, MyClass b){
+    return a + b.i;
 }
 
 MyClass obj;
@@ -1656,12 +1656,12 @@ double value = 2.0;
 Выберите все выражения, которые НЕ вызовут ошибки:
 
 Ответы:
-- [x]
-    value + value;
-- [x]
-    obj + 2.0;
 - [ ]
     obj + obj;
+- [x]
+    value + value;
+- [ ]
+    obj + 2.0;
 - [x]
     value + obj;
 - [ ]
