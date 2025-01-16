@@ -738,19 +738,19 @@ int* i;
 Ответы:
 - [ ]
     int* one[10];
-i = &one[0];
+    i = &one[0];
 - [ ]
     vector<int> one;
-i = &one;
+    i = &one;
 - [x]
     int one[10];
-i = &one[0];
+    i = &one[0];
 - [x]
     int one[10];
-i = &one;
+    i = &one;
 - [x]
     int one;
-i = &one;
+    i = &one;
 
 ---
 
