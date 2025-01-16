@@ -920,16 +920,26 @@ else; std::cout << b;
 
 Ответы:
 - [x]
-    for i := uint8(1); i < 100; { if i == 99 { continue } fmt.Print(i) i += 1 }
+    for i := uint8(1); i < 100; {
+    if i == 99 { continue } fmt.Print(i) i += 1
+}
 - [x]
-    for i := uint8(1); ; i++ { fmt.Print(i) }
+    for i := uint8(1); ; i++ {
+    fmt.Print(i)
+}
 - [x]
-    for ; ; { fmt.Print(1) }
+    for ; ; {
+    fmt.Print(1)
+}
 - [x]
-    for i := uint8(1); i<100;  { fmt.Print(i) }
+    for i := uint8(1); i<100;  {
+    fmt.Print(i)
+}
 - [x]
-    for i := uint8(1); i<100;  { fmt.Print(i) }
+    for i := uint8(1); i<100;  {
+    fmt.Print(i)
 
+}
 ---
 
 Дан фрагмент кода на С++. Что будет напечатано в результате выполнения следующего фрагмента кода:
