@@ -13,10 +13,10 @@ int main()
 	std::cout << "кол-во строк\nкол-во столбцов\n";
 	std::cin >> n >> m;
 	std::cout << "матрица\n";
-	for (int row = 0; row < n; row++)
+	for (int row = 0; row < m; row++)
 	{
 		std::vector<int> tmp_matr;
-		for (int col = 0; col < m; col++)
+		for (int col = 0; col < n; col++)
 		{
 			int tmp;
 			std::cin >> tmp;
