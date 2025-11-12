@@ -52,10 +52,10 @@ double adaptive(double a, double b, int &n, double max_error)
 
 
 int main() {
-    double a = 0.3;  // Начало отрезка
-    double b = 1.5;  // Конец отрезка
-    int n = 5;       // Количество разбиений
-    double max_error = 0.0000000000000005;
+    double a = 0.0;             // Начало отрезка
+    double b = 1.5;             // Конец отрезка
+    int n = 5;                  // Количество разбиений
+    double max_error = 0.0001;  // допустимая погрешность
 
     double res = adaptive(a, b, n, max_error);
 

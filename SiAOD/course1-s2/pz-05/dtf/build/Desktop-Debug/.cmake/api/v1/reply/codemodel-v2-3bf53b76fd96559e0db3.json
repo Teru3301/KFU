@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a925bd9e77217589aafe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dtf",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dtf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dtf-Debug-98eb5006dc0708bf61c0.json",
+					"name" : "dtf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dtf_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dtf_autogen-Debug-2f31cad7cd0ee08ad4e5.json",
+					"name" : "dtf_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dtf_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dtf_autogen_timestamp_deps-Debug-f9dbdc30f1fa054241a7.json",
+					"name" : "dtf_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/dtf/build/Desktop-Debug",
+		"source" : "/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/dtf"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

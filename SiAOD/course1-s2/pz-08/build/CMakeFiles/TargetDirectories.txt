@@ -1,0 +1,3 @@
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-08/build/CMakeFiles/laplace3d.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-08/build/CMakeFiles/edit_cache.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-08/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,9 @@
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/ftf.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/edit_cache.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/rebuild_cache.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/list_install_components.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/install.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/install/local.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/install/strip.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/ftf_autogen_timestamp_deps.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/ftf/build/CMakeFiles/ftf_autogen.dir

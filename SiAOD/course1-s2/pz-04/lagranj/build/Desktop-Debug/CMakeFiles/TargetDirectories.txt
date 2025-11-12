@@ -1,0 +1,9 @@
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/lagranj.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/install.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/lagranj_autogen_timestamp_deps.dir
+/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/CMakeFiles/lagranj_autogen.dir

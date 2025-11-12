@@ -1,0 +1,24 @@
+# ninja log v6
+4320	4748	1744070549220116625	lagranj	2af09998451b2c6
+758	11593	1744065198274911000	CMakeFiles/lagranj.dir/libs/qcustomplot.cpp.o	2a688bd31bd94d44
+38	4320	1744070544938116582	CMakeFiles/lagranj.dir/mainwindow.cpp.o	4008febc8aa01bd4
+324	5758	1744070293133466838	CMakeFiles/lagranj.dir/main.cpp.o	9282c6b63ad94545
+4	38	1744070544904116582	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/lagranj_autogen/mocs_compilation.cpp	9f54a7f9cfa13a43
+4	38	1744070544904116582	lagranj_autogen/mocs_compilation.cpp	9f54a7f9cfa13a43
+323	6457	1744070293133114048	CMakeFiles/lagranj.dir/lagranj_autogen/mocs_compilation.cpp.o	e5f4f156640c5252
+4	38	1744070544904116582	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/lagranj_autogen/timestamp	9f54a7f9cfa13a43
+4	38	1744070544904116582	lagranj_autogen/timestamp	9f54a7f9cfa13a43
+4	598	1744560621644162016	build.ninja	7276386c9031939b
+7	656	1744560622303158369	lagranj_autogen/timestamp	9f54a7f9cfa13a43
+7	656	1744560622303158369	lagranj_autogen/mocs_compilation.cpp	9f54a7f9cfa13a43
+7	656	1744560622303158369	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/lagranj_autogen/timestamp	9f54a7f9cfa13a43
+7	656	1744560622303158369	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/lagranj_autogen/mocs_compilation.cpp	9f54a7f9cfa13a43
+657	9789	1744560622318158370	CMakeFiles/lagranj.dir/main.cpp.o	9282c6b63ad94545
+656	11180	1744560622317158370	CMakeFiles/lagranj.dir/lagranj_autogen/mocs_compilation.cpp.o	e5f4f156640c5252
+657	15228	1744560622318753709	CMakeFiles/lagranj.dir/libs/qcustomplot.cpp.o	2a688bd31bd94d44
+6	40	1744560656197159342	lagranj_autogen/timestamp	9f54a7f9cfa13a43
+6	40	1744560656197159342	lagranj_autogen/mocs_compilation.cpp	9f54a7f9cfa13a43
+6	40	1744560656197159342	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/lagranj_autogen/timestamp	9f54a7f9cfa13a43
+6	40	1744560656197159342	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/lagranj/build/Desktop-Debug/lagranj_autogen/mocs_compilation.cpp	9f54a7f9cfa13a43
+40	5020	1744560656231159343	CMakeFiles/lagranj.dir/mainwindow.cpp.o	4008febc8aa01bd4
+5020	5471	1744560661211159486	lagranj	2af09998451b2c6

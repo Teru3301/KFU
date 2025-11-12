@@ -5,6 +5,7 @@
 
 double func (double x)
 {
+    //return 1.0 / (0.01 + std::abs(x));
     return x * std::pow(std::exp(1), 0.4 * x) / std::pow(1 + 0.4 * x, 2.0);
 }
 
@@ -28,26 +29,37 @@ double simpson(double a, double b, int n) {
 
 double runge(double res1, double res2, double k, double p)
 {
-    return std::abs(res1 - res2) / (std::pow(2, p) - 1);
+    return std::abs(res1 - res2) / (std::pow(k, p) - 1);
 }
 
 
 int main() {
-    double a = 0.3;  // Начало отрезка
-    double b = 1.5;  // Конец отрезка
-    int n = 5;   // Количество разбиений
-    double k = 2;
+    double a = 0.0;             // Начало отрезка
+    double b = 1.5;             // Конец отрезка
+    int n = 1;                  // Количество разбиений
+    double k = 2;               // во сколько раз увеличится количество разбиений
+    double max_error = 0.0001;  // допустимая погрешность
+    double error = 100000.0;    // текущая погрешность
+    double p = 4;               // порядок метода симпсона
 
-    double res1 = simpson(a, b, n);
-    double res2 = simpson(a, b, n*k);
+
+    double res1, res2;
+    while (error > max_error)
+    {
+        n *= k;
+        res1 = simpson(a, b, n);
+        res2 = simpson(a, b, n*k);
+        error = runge(res1, res2, k, p);
+    }
+
+
     std::cout << std::setprecision(8) << std::fixed;
     std::cout << "[" << a << ", " << b << "] кол-во шагов " << std::setw(5) 
         << n << ": " << res1 << std::endl;
     std::cout << "[" << a << ", " << b << "] кол-во шагов " << std::setw(5)
         << int(n * k) << ": " << res2 << std::endl;
 
-    std::cout << "Погрешность по рунге: " << runge(res1, res2, k, 4) << std::endl;
-
+    std::cout << "Погрешность по рунге: " << runge(res1, res2, k, p) << std::endl;
 
     return 0;
 }

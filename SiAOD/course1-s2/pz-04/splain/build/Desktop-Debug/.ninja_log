@@ -1,0 +1,14 @@
+# ninja log v6
+663	12107	1744561157055089386	CMakeFiles/splain.dir/libs/qcustomplot.cpp.o	1a7881915c1bbfcd
+360	7062	1744564803326278382	CMakeFiles/splain.dir/splain_autogen/mocs_compilation.cpp.o	c49f35bbb376ef6a
+39	4053	1744583612060506195	CMakeFiles/splain.dir/mainwindow.cpp.o	9643f05d2848f216
+360	5314	1744564803327643754	CMakeFiles/splain.dir/main.cpp.o	3e24903b787bcc2
+4053	4409	1744583616074506229	splain	f900a21ad09d1569
+7	55	1744720947069946575	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/splain/build/Desktop-Debug/splain_autogen/mocs_compilation.cpp	d99cac0d01b328b4
+7	55	1744720947069946575	splain_autogen/mocs_compilation.cpp	d99cac0d01b328b4
+7	55	1744720947069946575	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/splain/build/Desktop-Debug/splain_autogen/timestamp	d99cac0d01b328b4
+7	55	1744720947069946575	splain_autogen/timestamp	d99cac0d01b328b4
+9	74	1744721105580944678	splain_autogen/timestamp	d99cac0d01b328b4
+9	74	1744721105580944678	splain_autogen/mocs_compilation.cpp	d99cac0d01b328b4
+9	74	1744721105580944678	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/splain/build/Desktop-Debug/splain_autogen/timestamp	d99cac0d01b328b4
+9	74	1744721105580944678	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-04/splain/build/Desktop-Debug/splain_autogen/mocs_compilation.cpp	d99cac0d01b328b4

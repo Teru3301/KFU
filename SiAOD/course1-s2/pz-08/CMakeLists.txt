@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(Laplace3D)
+find_package(OpenGL REQUIRED)
+find_package(glfw3 REQUIRED)
+find_package(GLEW REQUIRED)
+add_executable(laplace3d l.cpp)
+target_link_libraries(laplace3d glfw GLEW OpenGL GLU)

@@ -1,0 +1,10 @@
+# ninja log v6
+1	311	1746864326086041383	dtf_autogen/timestamp	66de823ba53159f
+1	311	1746864326086041383	dtf_autogen/mocs_compilation.cpp	66de823ba53159f
+1	311	1746864326086041383	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/dtf/build/Desktop-Debug/dtf_autogen/timestamp	66de823ba53159f
+1	311	1746864326086041383	/home/teru/dev/repo/KFU/SiAOD/course1-s2/pz-05/dtf/build/Desktop-Debug/dtf_autogen/mocs_compilation.cpp	66de823ba53159f
+312	3735	1746864326097732603	CMakeFiles/dtf.dir/main.cpp.o	682f906ebb034feb
+312	3847	1746864326097904182	CMakeFiles/dtf.dir/mainwindow.cpp.o	2578505d4449241b
+312	4678	1746864326097041290	CMakeFiles/dtf.dir/dtf_autogen/mocs_compilation.cpp.o	1b1a817a067628aa
+312	8049	1746864326098066436	CMakeFiles/dtf.dir/libs/qcustomplot.cpp.o	12b7dabad661df21
+8049	8384	1746864333833975625	dtf	3965876d53e6207a
